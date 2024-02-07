@@ -26,7 +26,7 @@ namespace ConFin.Controle
                     Estado estado = new Estado(estadosigla, nome); //obg do tipo estado para armezar lá na lista de cima do tipo Estado (List<Estado>)
                     lista.Add(estado); //obj do tipo lista utilizando um metodo Add com paremetro de estado
                 }
-                rd.Close();
+                rd.Close(); //fechando a conexão do DataReader para não dar problema depois.
             }
             catch (NpgsqlException error)
             {
