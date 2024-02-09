@@ -23,7 +23,7 @@ namespace ConFin.Controle
                 {
                     string estadosigla = rd["estadosigla"].ToString();  //referenciando o campo, transformando em string e armazenando
                     string nome = rd["nome"].ToString();
-                    Estado estado = new Estado(estadosigla, nome); //obg do tipo estado para armezar lá na lista de cima do tipo Estado (List<Estado>)
+                    Estado estado = new Estado(estadosigla, nome); //obj do tipo estado para armezar lá na lista de cima do tipo Estado (List<Estado>)
                     lista.Add(estado); //obj do tipo lista utilizando um metodo Add com paremetro de estado
                 }
                 rd.Close(); //fechando a conexão do DataReader para não dar problema depois.
@@ -35,6 +35,25 @@ namespace ConFin.Controle
             }
 
             return lista;
+        }
+
+        public static bool SetIncluiEstado(NpgsqlConnection conexao, Estado estado)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "inset into estado(estadosigla,nome) values(@estadosigla, @nome)";
+                NpgsqlCommand cmd = new NpgsqlCommand( sql, conexao);
+                cmd.Parameters.Add("@estadosigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estado.estadoSigla; //alterando valor do parametro estadosigla para varchar
+                                                                                                                 //e que o valor do @estadosigla esta em estado.estadoSigla 
+                cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estado.nome;
+                int valor = cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);          
+            }
+            return realizou;
         }
     }
 }
