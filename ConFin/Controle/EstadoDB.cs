@@ -42,12 +42,16 @@ namespace ConFin.Controle
             bool realizou = false;
             try
             {
-                string sql = "inset into estado(estadosigla,nome) values(@estadosigla, @nome)";
+                string sql = "insert into estado(estadosigla,nome) values(@estadosigla, @nome)";
                 NpgsqlCommand cmd = new NpgsqlCommand( sql, conexao);
                 cmd.Parameters.Add("@estadosigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estado.estadoSigla; //alterando valor do parametro estadosigla para varchar
                                                                                                                  //e que o valor do @estadosigla esta em estado.estadoSigla 
                 cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estado.nome;
                 int valor = cmd.ExecuteNonQuery();
+                if(valor == 1) //Validação de inserção
+                {
+                    realizou = true;
+                }
             }
             catch (NpgsqlException erro)
             {
