@@ -59,5 +59,26 @@ namespace ConFin.Controle
             }
             return realizou;
         }
-    }
+        public static bool SetAlteraEstado(NpgsqlConnection conexao, Estado estado)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "update estado set nome = @nome where estadosigla = @estadosigla";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estado.nome;
+                cmd.Parameters.Add("@estadosigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estado.estadoSigla;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);
+            }
+            return realizou;
+        }
+    }    
 }
