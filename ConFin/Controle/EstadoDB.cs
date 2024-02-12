@@ -80,5 +80,26 @@ namespace ConFin.Controle
             }
             return realizou;
         }
-    }    
+
+        public static bool SetExcluiEstado(NpgsqlConnection conexao, string estadoSigla)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "delete * from estado where estadosigla = @estadoSigla";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@estadoSigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estadoSigla;
+                int valor = cmd.ExecuteNonQuery();
+                if(valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);
+            }
+            return realizou;
+        }
+    }   
 }
