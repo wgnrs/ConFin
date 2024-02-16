@@ -31,6 +31,7 @@
             this.buttonListar = new System.Windows.Forms.Button();
             this.richTextBoxMostra = new System.Windows.Forms.RichTextBox();
             this.buttonIncluir = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonListar
@@ -53,7 +54,7 @@
             // 
             // buttonIncluir
             // 
-            this.buttonIncluir.Location = new System.Drawing.Point(162, 97);
+            this.buttonIncluir.Location = new System.Drawing.Point(139, 97);
             this.buttonIncluir.Name = "buttonIncluir";
             this.buttonIncluir.Size = new System.Drawing.Size(75, 23);
             this.buttonIncluir.TabIndex = 2;
@@ -61,11 +62,22 @@
             this.buttonIncluir.UseVisualStyleBackColor = true;
             this.buttonIncluir.Click += new System.EventHandler(this.buttonIncluir_Click_1);
             // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.Location = new System.Drawing.Point(220, 97);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAlterar.TabIndex = 3;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 560);
+            this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonIncluir);
             this.Controls.Add(this.richTextBoxMostra);
             this.Controls.Add(this.buttonListar);
@@ -83,6 +95,7 @@
         private System.Windows.Forms.Button buttonListar;
         private System.Windows.Forms.RichTextBox richTextBoxMostra;
         private System.Windows.Forms.Button buttonIncluir;
+        private System.Windows.Forms.Button buttonAlterar;
     }
 }
 

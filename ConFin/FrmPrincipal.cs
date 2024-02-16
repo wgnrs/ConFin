@@ -56,5 +56,20 @@ namespace ConFin
                 MessageBox.Show("Erro ao incluir");
             }
         }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            Estado estado = new Estado("RJ", "Rio Niterói");
+            EstadoDB.SetAlteraEstado(conexao, estado);
+            bool realizou = EstadoDB.SetAlteraEstado(conexao, estado);
+            if(realizou)
+            {
+                MessageBox.Show("Alterado");
+            }
+            else
+            {
+                MessageBox.Show("Erro ao alterar");
+            }
+        }
     }
 }
