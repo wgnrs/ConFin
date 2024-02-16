@@ -1,4 +1,5 @@
 ﻿using ConFin.Controle;
+using ConFin.Modelo;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,17 @@ namespace ConFin
         private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             Conexao.SetFechaConexao(conexao);
+        }
+
+        private void buttonListar_Click(object sender, EventArgs e)
+        {
+            List<Estado> lista = EstadoDB.GetEstados(conexao);
+            richTextBoxMostra.Clear();
+            for (int i = 0; i < lista.Count; i++)
+            {
+                Estado estado = lista[i];
+                richTextBoxMostra.AppendText("Estado" + estado.estadoSigla + " - " + estado.nome + "\n");
+            }
         }
     }
 }
