@@ -49,7 +49,7 @@
             // 
             this.richTextBoxMostra.Location = new System.Drawing.Point(58, 138);
             this.richTextBoxMostra.Name = "richTextBoxMostra";
-            this.richTextBoxMostra.Size = new System.Drawing.Size(432, 231);
+            this.richTextBoxMostra.Size = new System.Drawing.Size(304, 150);
             this.richTextBoxMostra.TabIndex = 1;
             this.richTextBoxMostra.Text = "";
             // 
@@ -87,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 560);
+            this.ClientSize = new System.Drawing.Size(478, 396);
             this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonIncluir);
