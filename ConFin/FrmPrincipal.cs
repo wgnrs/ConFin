@@ -34,12 +34,12 @@ namespace ConFin
 
         private void buttonListar_Click(object sender, EventArgs e)
         {
-            List<Estado> lista = EstadoDB.GetEstados(conexao);
+            List<Cidade> lista = CidadeDB.GetCidades(conexao);
             richTextBoxMostra.Clear();
             for (int i = 0; i < lista.Count; i++)
             {
-                Estado estado = lista[i];
-                richTextBoxMostra.AppendText("Estado " + estado.estadoSigla + " - " + estado.nome + "\n");
+                Cidade cidade = lista[i];
+                richTextBoxMostra.AppendText("Cidade " + cidade.cidadeId + " - " + cidade.nome + " /"+ cidade.estadoSigla + "\n");
             }
         } 
 
