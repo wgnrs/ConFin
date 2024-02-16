@@ -41,9 +41,9 @@ namespace ConFin
                 Estado estado = lista[i];
                 richTextBoxMostra.AppendText("Estado" + estado.estadoSigla + " - " + estado.nome + "\n");
             }
-        }
+        } 
 
-        private void buttonIncluir_Click(object sender, EventArgs e)
+        private void buttonIncluir_Click_1(object sender, EventArgs e)
         {
             Estado estado = new Estado("RJ", "Rio de Janeiro");
             bool realizou = EstadoDB.SetIncluiEstado(conexao, estado);
