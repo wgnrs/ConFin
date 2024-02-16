@@ -32,6 +32,7 @@
             this.richTextBoxMostra = new System.Windows.Forms.RichTextBox();
             this.buttonIncluir = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
+            this.buttonExcluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonListar
@@ -72,11 +73,22 @@
             this.buttonAlterar.UseVisualStyleBackColor = true;
             this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.Location = new System.Drawing.Point(301, 97);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
+            this.buttonExcluir.TabIndex = 4;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 560);
+            this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonIncluir);
             this.Controls.Add(this.richTextBoxMostra);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.RichTextBox richTextBoxMostra;
         private System.Windows.Forms.Button buttonIncluir;
         private System.Windows.Forms.Button buttonAlterar;
+        private System.Windows.Forms.Button buttonExcluir;
     }
 }
 

@@ -86,7 +86,7 @@ namespace ConFin.Controle
             bool realizou = false;
             try
             {
-                string sql = "delete * from estado where estadosigla = @estadoSigla";
+                string sql = "delete from estado where estadosigla = @estadoSigla";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
                 cmd.Parameters.Add("@estadoSigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = estadoSigla;
                 int valor = cmd.ExecuteNonQuery();

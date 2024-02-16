@@ -39,7 +39,7 @@ namespace ConFin
             for (int i = 0; i < lista.Count; i++)
             {
                 Estado estado = lista[i];
-                richTextBoxMostra.AppendText("Estado" + estado.estadoSigla + " - " + estado.nome + "\n");
+                richTextBoxMostra.AppendText("Estado " + estado.estadoSigla + " - " + estado.nome + "\n");
             }
         } 
 
@@ -69,6 +69,19 @@ namespace ConFin
             else
             {
                 MessageBox.Show("Erro ao alterar");
+            }
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            bool realizou = EstadoDB.SetExcluiEstado(conexao, "RJ");
+            if (realizou)
+            {
+                MessageBox.Show("Excluiu");
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir");
             }
         }
     }
