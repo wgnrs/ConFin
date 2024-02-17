@@ -27,6 +27,7 @@ namespace ConFin.Controle
                     Cidade cidade = new Cidade(cidadeId, nome, estadoSigla);
                     lista.Add(cidade);
                 }
+                rd.Close();
             }
             catch (NpgsqlException error)
             {
