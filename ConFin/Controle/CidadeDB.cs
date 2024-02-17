@@ -35,5 +35,27 @@ namespace ConFin.Controle
             }
             return lista;
         }
+
+        public static bool SetIncluiCidade(NpgsqlConnection conexao, Cidade cidade)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "Inset into cidade(nome,estadoSigla) values (@nome,@estadoSigla)";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Integer).Value = cidade.nome;
+                cmd.Parameters.Add("@estadoSigla", NpgsqlTypes.NpgsqlDbType.Integer).Value = cidade.estadoSigla;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);                
+            }
+            return realizou;
+        }
     }
 }
