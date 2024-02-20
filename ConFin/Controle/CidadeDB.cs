@@ -1,5 +1,6 @@
 ﻿using ConFin.Modelo;
 using Npgsql;
+using NpgsqlTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,6 +50,29 @@ namespace ConFin.Controle
                 if (valor == 1)
                 {
                     realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);                
+            }
+            return realizou;
+        }
+
+        public static bool SetAlteraCidade(NpgsqlConnection conexao, Cidade cidade)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "update cidade set nome = @nome, estadoSigla = @estadoSigla where cidadeId = @cidadeId";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@nome", NpgsqlDbType.Varchar).Value = cidade.nome;
+                cmd.Parameters.Add("@estadoSigla", NpgsqlDbType.Varchar).Value = cidade.estadoSigla;
+                cmd.Parameters.Add("@cidadeId", NpgsqlDbType.Integer).Value = cidade.cidadeId;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou= true;
                 }
             }
             catch (NpgsqlException erro)
