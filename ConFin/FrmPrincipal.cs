@@ -74,7 +74,7 @@ namespace ConFin
 
         private void buttonExcluir_Click(object sender, EventArgs e)
         {
-            bool realizou = EstadoDB.SetExcluiEstado(conexao, "RJ");
+            bool realizou = CidadeDB.SetExcluiCidade(conexao, 3);
             if (realizou)
             {
                 MessageBox.Show("Excluiu");

@@ -81,5 +81,26 @@ namespace ConFin.Controle
             }
             return realizou;
         }
+
+        public static bool SetExcluiCidade(NpgsqlConnection conexao, int cidadeId)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "delete from cidade where cidadeId = @cidadeId";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@cidadeId", NpgsqlDbType.Integer).Value = cidadeId;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);
+            }
+            return realizou;
+        }
     }
 }
