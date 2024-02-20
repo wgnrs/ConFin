@@ -41,10 +41,10 @@ namespace ConFin.Controle
             bool realizou = false;
             try
             {
-                string sql = "Inset into cidade(nome,estadoSigla) values (@nome,@estadoSigla)";
+                string sql = "Insert into cidade(nome,estadoSigla) values (@nome,@estadoSigla)";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
-                cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Integer).Value = cidade.nome;
-                cmd.Parameters.Add("@estadoSigla", NpgsqlTypes.NpgsqlDbType.Integer).Value = cidade.estadoSigla;
+                cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.nome;
+                cmd.Parameters.Add("@estadoSigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.estadoSigla;
                 int valor = cmd.ExecuteNonQuery();
                 if (valor == 1)
                 {

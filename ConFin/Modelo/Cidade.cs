@@ -18,5 +18,10 @@ namespace ConFin.Modelo
             this.nome = nome;
             this.estadoSigla = estadoSigla;
         }
+        public Cidade(string nome, string estadoSigla)
+        {
+            this.nome = nome;
+            this.estadoSigla = estadoSigla;
+        }
     }
 }

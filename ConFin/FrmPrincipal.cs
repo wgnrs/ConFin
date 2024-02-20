@@ -45,8 +45,8 @@ namespace ConFin
 
         private void buttonIncluir_Click_1(object sender, EventArgs e)
         {
-            Estado estado = new Estado("RJ", "Rio de Janeiro");
-            bool realizou = EstadoDB.SetIncluiEstado(conexao, estado);
+            Cidade cidade = new Cidade("Joinville", "SC");
+            bool realizou = CidadeDB.SetIncluiCidade(conexao, cidade);
             if (realizou)
             {
                 MessageBox.Show("Foi incluído");
