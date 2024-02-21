@@ -110,5 +110,27 @@ namespace ConFin.Controle
             }
             return realizou;
         }
+
+        public static bool SetExcluiPessoa(NpgsqlConnection conexao, int pessoaId)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "delete from pessoa where pessoaId = @pessoaId";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@pessoaId", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoaId;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+
+                MessageBox.Show("Erro de SQLaaa: " + erro.Message);
+            }
+            return realizou;
+        }
     }
 }
