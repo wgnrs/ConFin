@@ -17,7 +17,7 @@ namespace ConFin.Controle
             List<Pessoa> lista = new List<Pessoa>();
             try
             {
-                string sql = "select * from pessoa oder by nome";
+                string sql = "select * from pessoa order by nome";
                 NpgsqlCommand cdm = new NpgsqlCommand(sql, conexao);
                 NpgsqlDataReader rd = cdm.ExecuteReader();
                 while (rd.Read())
