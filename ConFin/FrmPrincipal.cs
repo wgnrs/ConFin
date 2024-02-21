@@ -59,9 +59,9 @@ namespace ConFin
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
-            Cidade cidade = new Cidade(3, "Campinas", "SP");
-            CidadeDB.SetAlteraCidade(conexao, cidade);
-            bool realizou = CidadeDB.SetAlteraCidade(conexao, cidade);
+            Pessoa pessoa = new Pessoa(2, "Joao da Souza", "000.000.000-00", "Rua das GAITA, 52", "Olimpico", "(99)99999-9999", "joao@ueeb.com.br", 0, 1);
+            PessoaDB.SetAlteraPessoa(conexao, pessoa);
+            bool realizou = PessoaDB.SetAlteraPessoa(conexao, pessoa);
             if(realizou)
             {
                 MessageBox.Show("Alterado");

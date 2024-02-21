@@ -73,18 +73,18 @@ namespace ConFin.Controle
             return realizou;
         }
 
-        public static bool AlteraIncluiPessoa(NpgsqlConnection conexao, Pessoa pessoa)
+        public static bool SetAlteraPessoa(NpgsqlConnection conexao, Pessoa pessoa)
         {
             bool realizou = false;
             try
             {
                 string sql = "update pessoa set nome = @nome"
                             + " , cpfcnpj = @cpfcnpj "
-                            + " , endereco = @endereco,"
-                            + " , bairro = @bairro"
-                            + " , telefone = @telefone, "
-                            + " , email = @email, "
-                            + " , tipo = @tipo, "
+                            + " , endereco = @endereco "
+                            + " , bairro = @bairro "
+                            + " , telefone = @telefone "
+                            + " , email = @email "
+                            + " , tipo = @tipo "
                             + " , cidadeId = @cidadeId"
                             + " where pessoaId = @pessoaId";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
@@ -106,7 +106,7 @@ namespace ConFin.Controle
             catch (NpgsqlException erro)
             {
 
-                MessageBox.Show("Erro de SQL: " + erro.Message);
+                MessageBox.Show("Erro de SQLaaa: " + erro.Message);
             }
             return realizou;
         }
