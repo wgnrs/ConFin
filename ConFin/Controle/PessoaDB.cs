@@ -72,5 +72,43 @@ namespace ConFin.Controle
             }
             return realizou;
         }
+
+        public static bool AlteraIncluiPessoa(NpgsqlConnection conexao, Pessoa pessoa)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "update pessoa set nome = @nome"
+                            + " , cpfcnpj = @cpfcnpj "
+                            + " , endereco = @endereco,"
+                            + " , bairro = @bairro"
+                            + " , telefone = @telefone, "
+                            + " , email = @email, "
+                            + " , tipo = @tipo, "
+                            + " , cidadeId = @cidadeId"
+                            + " where pessoaId = @pessoaId";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.nome;
+                cmd.Parameters.Add("@cpfcnpj", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.cpfcnpj;
+                cmd.Parameters.Add("@endereco", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.endereco;
+                cmd.Parameters.Add("@bairro", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.bairro;
+                cmd.Parameters.Add("@telefone", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.telefone;
+                cmd.Parameters.Add("@email", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.email;
+                cmd.Parameters.Add("@tipo", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.tipo;
+                cmd.Parameters.Add("@cidadeId", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.cidadeId;
+                cmd.Parameters.Add("@pessoaId", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.pessoaId;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+
+                MessageBox.Show("Erro de SQL: " + erro.Message);
+            }
+            return realizou;
+        }
     }
 }
