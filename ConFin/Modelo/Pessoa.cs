@@ -32,5 +32,17 @@ namespace ConFin.Modelo
             this.tipo= tipo;
             this.cidadeId= cidadeId;
         }
+
+        public Pessoa(string nome, string cpfcnpj, string endereco, string bairro, string telefone, string email, int tipo, int cidadeId)
+        {
+            this.nome = nome;
+            this.cpfcnpj = cpfcnpj;
+            this.endereco = endereco;
+            this.bairro = bairro;
+            this.telefone = telefone;
+            this.email = email;
+            this.tipo = tipo;
+            this.cidadeId = cidadeId;
+        }
     }
 }
