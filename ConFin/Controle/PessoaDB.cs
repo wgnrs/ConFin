@@ -128,7 +128,7 @@ namespace ConFin.Controle
             catch (NpgsqlException erro)
             {
 
-                MessageBox.Show("Erro de SQLaaa: " + erro.Message);
+                MessageBox.Show("Erro de SQL: " + erro.Message);
             }
             return realizou;
         }
