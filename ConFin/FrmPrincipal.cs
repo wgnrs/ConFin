@@ -45,8 +45,8 @@ namespace ConFin
 
         private void buttonIncluir_Click_1(object sender, EventArgs e)
         {
-            Pessoa pessoa = new Pessoa("Joao da Silva","000.000.000-00","Rua das palmeiras, 30","Jardim America","(99)99999-9999","joao@web.com.br",0,1);
-            bool realizou = PessoaDB.SetIncluiPessoa(conexao, pessoa);
+            var conta = new Conta("test", 22.55, DateTime.Now, DateTime.Now, 1, 2 , 1);
+            bool realizou = ContaDB.SetIncluiContas(conexao, conta);
             if (realizou)
             {
                 MessageBox.Show("Foi incluído");
