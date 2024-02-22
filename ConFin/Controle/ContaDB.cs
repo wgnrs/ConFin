@@ -71,6 +71,40 @@ namespace ConFin.Controle
             return realizou;
         }
 
+        public static bool SetAlteraConta(NpgsqlConnection conexao, Conta conta)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "update conta set descricao = @descricao"
+                            + " , valor = @valor "
+                            + " , dataVencimento = @dataVencimento "
+                            + " , dataPagamento = @dataPagamento "
+                            + " , dataVencimento = @dataVencimento "
+                            + " , situacao = @situacao "
+                            + " , tipo = @tipo ";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@descricao", NpgsqlTypes.NpgsqlDbType.Varchar).Value = conta.descricao;
+                cmd.Parameters.Add("@valor", NpgsqlTypes.NpgsqlDbType.Numeric).Value = conta.valor;
+                cmd.Parameters.Add("@dataVencimento", NpgsqlTypes.NpgsqlDbType.Timestamp).Value = conta.dataVencimento;
+                cmd.Parameters.Add("@dataPagamento", NpgsqlTypes.NpgsqlDbType.Timestamp).Value = conta.dataPagamento;
+                cmd.Parameters.Add("@situacao", NpgsqlTypes.NpgsqlDbType.Integer).Value = conta.situacao;
+                cmd.Parameters.Add("@tipo", NpgsqlTypes.NpgsqlDbType.Integer).Value = conta.tipo;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+
+            }
+            catch (NpgsqlException erro)
+            {
+
+                MessageBox.Show("Erro de SQL: " + erro.Message);
+            }
+            return realizou;
+        }
+
         public static  bool SetExcluiConta(NpgsqlConnection conexao, int contaId)
         {
             bool realizou = false;
