@@ -74,7 +74,7 @@ namespace ConFin
 
         private void buttonExcluir_Click(object sender, EventArgs e)
         {
-            bool realizou = ContaDB.SetExcluiConta(conexao, 4);
+            bool realizou = ContaDB.SetExcluiConta(conexao, 14);
             if (realizou)
             {
                 MessageBox.Show("Excluiu");
