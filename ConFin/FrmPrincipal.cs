@@ -45,7 +45,7 @@ namespace ConFin
 
         private void buttonIncluir_Click_1(object sender, EventArgs e)
         {
-            var conta = new Conta("test", 22.55, DateTime.Now, DateTime.Now, 1, 2 , 1);
+            var conta = new Conta("test", 22.55, DateTime.Now, DateTime.Now, 1, 2, 1);
             bool realizou = ContaDB.SetIncluiConta(conexao, conta);
             if (realizou)
             {
@@ -56,12 +56,12 @@ namespace ConFin
                 MessageBox.Show("Erro ao incluir");
             }
         }
-
+         
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
-            Pessoa pessoa = new Pessoa(2, "Joao da Souza", "000.000.000-00", "Rua das GAITA, 52", "Olimpico", "(99)99999-9999", "joao@ueeb.com.br", 0, 1);
-            PessoaDB.SetAlteraPessoa(conexao, pessoa);
-            bool realizou = PessoaDB.SetAlteraPessoa(conexao, pessoa);
+            Conta conta = new Conta(13, "Paçoca", 100.00 , DateTime.Now, DateTime.Now, 1, 2, 1);
+            ContaDB.SetAlteraConta(conexao, conta);
+            bool realizou = ContaDB.SetAlteraConta(conexao, conta);
             if(realizou)
             {
                 MessageBox.Show("Alterado");

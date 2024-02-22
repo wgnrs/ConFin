@@ -80,9 +80,10 @@ namespace ConFin.Controle
                             + " , valor = @valor "
                             + " , dataVencimento = @dataVencimento "
                             + " , dataPagamento = @dataPagamento "
-                            + " , dataVencimento = @dataVencimento "
                             + " , situacao = @situacao "
-                            + " , tipo = @tipo ";
+                            + " , tipo = @tipo "
+                            + " , pessoaId = @pessoaId"
+                            + " where contaId = @contaId";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
                 cmd.Parameters.Add("@descricao", NpgsqlTypes.NpgsqlDbType.Varchar).Value = conta.descricao;
                 cmd.Parameters.Add("@valor", NpgsqlTypes.NpgsqlDbType.Numeric).Value = conta.valor;
@@ -90,6 +91,9 @@ namespace ConFin.Controle
                 cmd.Parameters.Add("@dataPagamento", NpgsqlTypes.NpgsqlDbType.Timestamp).Value = conta.dataPagamento;
                 cmd.Parameters.Add("@situacao", NpgsqlTypes.NpgsqlDbType.Integer).Value = conta.situacao;
                 cmd.Parameters.Add("@tipo", NpgsqlTypes.NpgsqlDbType.Integer).Value = conta.tipo;
+                cmd.Parameters.Add("@pessoaId", NpgsqlTypes.NpgsqlDbType.Integer).Value = conta.pessoaId;
+                cmd.Parameters.Add("@contaId", NpgsqlTypes.NpgsqlDbType.Integer).Value = conta.contaId;
+
                 int valor = cmd.ExecuteNonQuery();
                 if (valor == 1)
                 {
@@ -100,7 +104,7 @@ namespace ConFin.Controle
             catch (NpgsqlException erro)
             {
 
-                MessageBox.Show("Erro de SQL: " + erro.Message);
+                MessageBox.Show("Erro de SQLa: " + erro.Message);
             }
             return realizou;
         }

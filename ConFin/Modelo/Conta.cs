@@ -35,6 +35,18 @@ namespace ConFin.Modelo
             this.pessoaId = pessoaId;
         }
 
+        public Conta(int contaId, string descricao, double valor, DateTime dataVencimento, DateTime dataPagamento, int situacao, int tipo)
+        {
+            this.contaId = contaId;
+            this.descricao = descricao;
+            this.valor = valor;
+            this.dataVencimento = dataVencimento;
+            this.dataPagamento = dataPagamento;
+            this.situacao = situacao;
+            this.tipo = tipo;
+            this.pessoaId = pessoaId;
+        }
+
         public Conta(string descricao, double valor, DateTime dataVencimento, DateTime dataPagamento, int situacao, int tipo, int pessoaId)
         {
             this.descricao = descricao;
@@ -44,6 +56,16 @@ namespace ConFin.Modelo
             this.situacao = situacao;
             this.tipo = tipo;
             this.pessoaId = pessoaId;
+        }
+
+        public Conta(string descricao, double valor, DateTime dataVencimento, DateTime dataPagamento, int situacao, int tipo)
+        {
+            this.descricao = descricao;
+            this.valor = valor;
+            this.dataVencimento = dataVencimento;
+            this.dataPagamento = dataPagamento;
+            this.situacao = situacao;
+            this.tipo = tipo;
         }
 
     }
