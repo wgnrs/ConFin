@@ -41,7 +41,7 @@ namespace ConFin.Controle
             return lista;
         }
 
-        public static bool SetIncluiContas(NpgsqlConnection conexao, Conta conta)
+        public static bool SetIncluiConta(NpgsqlConnection conexao, Conta conta)
         {
             bool realizou = false;
             try
@@ -67,6 +67,27 @@ namespace ConFin.Controle
             {
 
                 MessageBox.Show("Erro de SQL: " + erro.Message);
+            }
+            return realizou;
+        }
+
+        public static  bool SetExcluiConta(NpgsqlConnection conexao, int contaId)
+        {
+            bool realizou = false;
+            try
+            {
+                string sql = "delete from conta where contaId = @contaId";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
+                cmd.Parameters.Add("@contaId", NpgsqlTypes.NpgsqlDbType.Integer).Value=contaId;
+                int valor = cmd.ExecuteNonQuery();
+                if (valor == 1)
+                {
+                    realizou = true;
+                }
+            }
+            catch (NpgsqlException erro)
+            {
+                MessageBox.Show("Erro de SQL: " + erro.Message);                
             }
             return realizou;
         }

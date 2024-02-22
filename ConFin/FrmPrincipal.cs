@@ -46,7 +46,7 @@ namespace ConFin
         private void buttonIncluir_Click_1(object sender, EventArgs e)
         {
             var conta = new Conta("test", 22.55, DateTime.Now, DateTime.Now, 1, 2 , 1);
-            bool realizou = ContaDB.SetIncluiContas(conexao, conta);
+            bool realizou = ContaDB.SetIncluiConta(conexao, conta);
             if (realizou)
             {
                 MessageBox.Show("Foi incluído");
