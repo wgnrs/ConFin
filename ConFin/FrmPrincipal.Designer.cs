@@ -33,6 +33,20 @@
             this.buttonIncluir = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pessoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cidadeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pessoaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonListar
@@ -83,6 +97,104 @@
             this.buttonExcluir.UseVisualStyleBackColor = true;
             this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquivoToolStripMenuItem,
+            this.cadastrosToolStripMenuItem,
+            this.relatóriosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1121, 28);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sairToolStripMenuItem});
+            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // cadastrosToolStripMenuItem
+            // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cidadeToolStripMenuItem,
+            this.contaToolStripMenuItem,
+            this.estadoToolStripMenuItem,
+            this.pessoaToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            // 
+            // cidadeToolStripMenuItem
+            // 
+            this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
+            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cidadeToolStripMenuItem.Text = "Cidade";
+            // 
+            // contaToolStripMenuItem
+            // 
+            this.contaToolStripMenuItem.Name = "contaToolStripMenuItem";
+            this.contaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.contaToolStripMenuItem.Text = "Conta";
+            // 
+            // estadoToolStripMenuItem
+            // 
+            this.estadoToolStripMenuItem.Name = "estadoToolStripMenuItem";
+            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.estadoToolStripMenuItem.Text = "Estado";
+            // 
+            // pessoaToolStripMenuItem
+            // 
+            this.pessoaToolStripMenuItem.Name = "pessoaToolStripMenuItem";
+            this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pessoaToolStripMenuItem.Text = "Pessoa";
+            // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cidadeToolStripMenuItem1,
+            this.contaToolStripMenuItem1,
+            this.estadoToolStripMenuItem1,
+            this.pessoaToolStripMenuItem1});
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // contaToolStripMenuItem1
+            // 
+            this.contaToolStripMenuItem1.Name = "contaToolStripMenuItem1";
+            this.contaToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.contaToolStripMenuItem1.Text = "Conta";
+            // 
+            // cidadeToolStripMenuItem1
+            // 
+            this.cidadeToolStripMenuItem1.Name = "cidadeToolStripMenuItem1";
+            this.cidadeToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.cidadeToolStripMenuItem1.Text = "Cidade";
+            // 
+            // estadoToolStripMenuItem1
+            // 
+            this.estadoToolStripMenuItem1.Name = "estadoToolStripMenuItem1";
+            this.estadoToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.estadoToolStripMenuItem1.Text = "Estado";
+            // 
+            // pessoaToolStripMenuItem1
+            // 
+            this.pessoaToolStripMenuItem1.Name = "pessoaToolStripMenuItem1";
+            this.pessoaToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.pessoaToolStripMenuItem1.Text = "Pessoa";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -93,12 +205,17 @@
             this.Controls.Add(this.buttonIncluir);
             this.Controls.Add(this.richTextBoxMostra);
             this.Controls.Add(this.buttonListar);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConFin - Controle Financeiro";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,6 +226,19 @@
         private System.Windows.Forms.Button buttonIncluir;
         private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.Button buttonExcluir;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cidadeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pessoaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cidadeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem contaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem estadoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pessoaToolStripMenuItem1;
     }
 }
 

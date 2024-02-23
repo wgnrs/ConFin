@@ -84,5 +84,10 @@ namespace ConFin
                 MessageBox.Show("Erro ao excluir");
             }
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
