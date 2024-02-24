@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
-[assembly: AssemblyTitle("ConFin")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ConFin - Controle Financeiro")]
+[assembly: AssemblyDescription("Controle financeiro")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("TwoTwo")]
 [assembly: AssemblyProduct("ConFin")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
