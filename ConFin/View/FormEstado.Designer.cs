@@ -29,21 +29,73 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEstado));
+            this.dataGridViewMostra = new System.Windows.Forms.DataGridView();
+            this.buttonNovo = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
+            this.buttonExcluir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dataGridViewMostra
+            // 
+            this.dataGridViewMostra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMostra.Location = new System.Drawing.Point(59, 45);
+            this.dataGridViewMostra.Name = "dataGridViewMostra";
+            this.dataGridViewMostra.RowHeadersWidth = 51;
+            this.dataGridViewMostra.RowTemplate.Height = 24;
+            this.dataGridViewMostra.Size = new System.Drawing.Size(364, 255);
+            this.dataGridViewMostra.TabIndex = 0;
+            // 
+            // buttonNovo
+            // 
+            this.buttonNovo.Location = new System.Drawing.Point(60, 334);
+            this.buttonNovo.Name = "buttonNovo";
+            this.buttonNovo.Size = new System.Drawing.Size(102, 23);
+            this.buttonNovo.TabIndex = 1;
+            this.buttonNovo.Text = "Novo estado";
+            this.buttonNovo.UseVisualStyleBackColor = true;
+            // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.Location = new System.Drawing.Point(192, 334);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(102, 23);
+            this.buttonAlterar.TabIndex = 2;
+            this.buttonAlterar.Text = "Alterar estado";
+            this.buttonAlterar.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.Location = new System.Drawing.Point(320, 334);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(102, 23);
+            this.buttonExcluir.TabIndex = 3;
+            this.buttonExcluir.Text = "Excluir estado";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
             // FormEstado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(483, 398);
+            this.Controls.Add(this.buttonExcluir);
+            this.Controls.Add(this.buttonAlterar);
+            this.Controls.Add(this.buttonNovo);
+            this.Controls.Add(this.dataGridViewMostra);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormEstado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de estado";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridViewMostra;
+        private System.Windows.Forms.Button buttonNovo;
+        private System.Windows.Forms.Button buttonAlterar;
+        private System.Windows.Forms.Button buttonExcluir;
     }
 }
