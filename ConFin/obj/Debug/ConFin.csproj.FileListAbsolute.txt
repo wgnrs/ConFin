@@ -41,3 +41,4 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\System.Threading
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\System.ValueTuple.xml
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.csproj.CopyComplete
+C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstado.resources

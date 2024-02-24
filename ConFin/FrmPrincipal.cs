@@ -1,5 +1,6 @@
 ﻿using ConFin.Controle;
 using ConFin.Modelo;
+using ConFin.View;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -88,6 +89,12 @@ namespace ConFin
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void estadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEstado form = new FormEstado();
+            form.ShowDialog();
         }
     }
 }
