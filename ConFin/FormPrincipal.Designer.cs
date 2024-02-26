@@ -1,6 +1,6 @@
 ﻿namespace ConFin
 {
-    partial class FrmPrincipal
+    partial class FormPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.buttonListar = new System.Windows.Forms.Button();
             this.richTextBoxMostra = new System.Windows.Forms.RichTextBox();
             this.buttonIncluir = new System.Windows.Forms.Button();

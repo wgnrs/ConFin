@@ -103,11 +103,11 @@
     <Compile Include="Controle\ContaDB.cs" />
     <Compile Include="Controle\EstadoDB.cs" />
     <Compile Include="Controle\PessoaDB.cs" />
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Cidade.cs" />
     <Compile Include="Modelo\Conta.cs" />
@@ -121,8 +121,8 @@
     <Compile Include="View\FormEstado.Designer.cs">
       <DependentUpon>FormEstado.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

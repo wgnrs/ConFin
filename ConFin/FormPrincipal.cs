@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace ConFin
 {
-    public partial class FrmPrincipal : Form
+    public partial class FormPrincipal : Form
     {
         public NpgsqlConnection conexao = null; //atributo conexão criado
-        public FrmPrincipal() //metodo construtor
+        public FormPrincipal() //metodo construtor
         {
             conexao = Conexao.GetConexao(); //instanciando o obj conexao com um conexao pronta utilizando o metodo getconexao
             InitializeComponent(); //metodo de criação de formulário

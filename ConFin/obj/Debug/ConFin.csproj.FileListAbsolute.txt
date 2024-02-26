@@ -7,7 +7,6 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.csproj.Ge
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.csproj.CoreCompileInputs.cache
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.exe
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.pdb
-C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.FrmPrincipal.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\Microsoft.Bcl.HashCode.dll
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -42,3 +41,4 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\System.Threading
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\System.ValueTuple.xml
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.csproj.CopyComplete
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstado.resources
+C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.FormPrincipal.resources
