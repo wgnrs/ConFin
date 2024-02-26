@@ -33,12 +33,17 @@
             this.buttonNovo = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
+            this.estadosigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewMostra
             // 
             this.dataGridViewMostra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMostra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.estadosigla,
+            this.nome});
             this.dataGridViewMostra.Location = new System.Drawing.Point(59, 45);
             this.dataGridViewMostra.Name = "dataGridViewMostra";
             this.dataGridViewMostra.RowHeadersWidth = 51;
@@ -73,6 +78,22 @@
             this.buttonExcluir.Text = "Excluir estado";
             this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
+            // estadosigla
+            // 
+            this.estadosigla.DataPropertyName = "estadosigla";
+            this.estadosigla.HeaderText = "Sigla";
+            this.estadosigla.MinimumWidth = 6;
+            this.estadosigla.Name = "estadosigla";
+            this.estadosigla.Width = 60;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "Nome";
+            this.nome.MinimumWidth = 6;
+            this.nome.Name = "nome";
+            this.nome.Width = 200;
+            // 
             // FormEstado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,5 +119,7 @@
         private System.Windows.Forms.Button buttonNovo;
         private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.Button buttonExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadosigla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
     }
 }
