@@ -42,3 +42,4 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\bin\Debug\System.ValueTupl
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.csproj.CopyComplete
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstado.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.FormPrincipal.resources
+C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstadoNovo.resources
