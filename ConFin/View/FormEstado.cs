@@ -1,4 +1,5 @@
 ﻿using ConFin.Controle;
+using ConFin.Modelo;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -19,11 +20,18 @@ namespace ConFin.View
         {
             this.conexao = Conexao.GetConexao();
             InitializeComponent();
+            AtualizaGrid();
         }
 
         private void FormEstado_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void AtualizaGrid()
+        {
+            List<Estado> lista = EstadoDB.GetEstados(conexao);
+            dataGridViewMostra.DataSource = lista; //recebe o lista como DataSource para mostrar no grid
         }
     }
 }
