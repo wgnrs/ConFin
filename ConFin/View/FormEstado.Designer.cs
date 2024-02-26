@@ -86,6 +86,7 @@
             this.Name = "FormEstado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de estado";
+            this.Load += new System.EventHandler(this.FormEstado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).EndInit();
             this.ResumeLayout(false);
 

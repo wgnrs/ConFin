@@ -93,7 +93,7 @@ namespace ConFin
 
         private void estadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormEstado form = new FormEstado();
+            FormEstado form = new FormEstado(conexao);
             form.ShowDialog();
         }
     }
