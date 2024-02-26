@@ -30,7 +30,7 @@ namespace ConFin.View
 
         private void buttonSalvar_Click(object sender, EventArgs e)
         {            
-            Estado estado = new Estado(textBoxSigla.Text, textBoxSigla.Text);
+            Estado estado = new Estado(textBoxSigla.Text, textBoxNome.Text);
             bool realizou = EstadoDB.SetIncluiEstado(conexao, estado);
             if (realizou)
             {
@@ -41,6 +41,11 @@ namespace ConFin.View
             {
                 MessageBox.Show("Estado não cadastrado");
             }
+        }
+
+        private void textBoxNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

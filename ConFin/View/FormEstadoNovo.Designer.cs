@@ -70,6 +70,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(254, 22);
             this.textBoxNome.TabIndex = 3;
+            this.textBoxNome.TextChanged += new System.EventHandler(this.textBoxNome_TextChanged);
             // 
             // buttonSalvar
             // 
