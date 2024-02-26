@@ -33,5 +33,12 @@ namespace ConFin.View
             List<Estado> lista = EstadoDB.GetEstados(conexao);
             dataGridViewMostra.DataSource = lista; //recebe o lista como DataSource para mostrar no grid
         }
+
+        private void buttonNovo_Click(object sender, EventArgs e)
+        {
+            FormEstadoNovo form = new FormEstadoNovo(conexao);
+            form.ShowDialog();
+            AtualizaGrid();
+        }
     }
 }

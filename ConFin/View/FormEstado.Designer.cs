@@ -60,6 +60,7 @@
             this.buttonNovo.TabIndex = 1;
             this.buttonNovo.Text = "Novo estado";
             this.buttonNovo.UseVisualStyleBackColor = true;
+            this.buttonNovo.Click += new System.EventHandler(this.buttonNovo_Click);
             // 
             // buttonAlterar
             // 
