@@ -48,6 +48,7 @@
             this.dataGridViewMostra.Name = "dataGridViewMostra";
             this.dataGridViewMostra.RowHeadersWidth = 51;
             this.dataGridViewMostra.RowTemplate.Height = 24;
+            this.dataGridViewMostra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMostra.Size = new System.Drawing.Size(364, 255);
             this.dataGridViewMostra.TabIndex = 0;
             // 
