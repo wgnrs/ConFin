@@ -121,6 +121,12 @@
     <Compile Include="View\FormEstado.Designer.cs">
       <DependentUpon>FormEstado.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormEstadoAltera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormEstadoAltera.Designer.cs">
+      <DependentUpon>FormEstadoAltera.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormEstadoNovo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="View\FormEstado.resx">
       <DependentUpon>FormEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEstadoAltera.resx">
+      <DependentUpon>FormEstadoAltera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormEstadoNovo.resx">
       <DependentUpon>FormEstadoNovo.cs</DependentUpon>

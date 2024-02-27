@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 44);
+            this.label1.Location = new System.Drawing.Point(36, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 16);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // textBoxSigla
             // 
             this.textBoxSigla.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxSigla.Location = new System.Drawing.Point(37, 63);
+            this.textBoxSigla.Location = new System.Drawing.Point(39, 73);
             this.textBoxSigla.MaxLength = 2;
             this.textBoxSigla.Name = "textBoxSigla";
             this.textBoxSigla.Size = new System.Drawing.Size(100, 22);
@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 113);
+            this.label2.Location = new System.Drawing.Point(36, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(37, 132);
+            this.textBoxNome.Location = new System.Drawing.Point(39, 142);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(254, 22);
             this.textBoxNome.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(72, 220);
+            this.buttonSalvar.Location = new System.Drawing.Point(74, 230);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
             this.buttonSalvar.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(167, 220);
+            this.buttonCancelar.Location = new System.Drawing.Point(169, 230);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
             this.buttonCancelar.TabIndex = 5;
