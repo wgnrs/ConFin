@@ -96,6 +96,7 @@
             this.buttonExcluir.TabIndex = 3;
             this.buttonExcluir.Text = "Excluir estado";
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // FormEstado
             // 

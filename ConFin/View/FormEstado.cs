@@ -48,5 +48,28 @@ namespace ConFin.View
             form.ShowDialog();
             AtualizaGrid();
         }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja excluir o estado?", "Excluir estado", MessageBoxButtons.OKCancel);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                Estado estado = (Estado)dataGridViewMostra.SelectedRows[0].DataBoundItem;
+                bool realizou = EstadoDB.SetExcluiEstado(conexao, estado.estadoSigla);
+                if (realizou)
+                {
+                    MessageBox.Show("Estado excluido com sucesso!");
+                    AtualizaGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao excluir o estado!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Operação cancelada");
+            }
+        }
     }
 }
