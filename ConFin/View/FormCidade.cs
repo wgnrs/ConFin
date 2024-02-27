@@ -28,5 +28,12 @@ namespace ConFin.View
             List<Cidade> lista = CidadeDB.GetCidades(conexao);
             dataGridViewMostra.DataSource = lista; //recebe o lista como DataSource para mostrar no grid
         }
+
+        private void buttonNova_Click(object sender, EventArgs e)
+        {
+            FormCidadeNova form = new FormCidadeNova(conexao);
+            form.ShowDialog();
+            AtualizaGrid();
+        }
     }
 }
