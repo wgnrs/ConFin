@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEstadoNovo));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxSigla = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.textBoxSigla = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -45,15 +45,6 @@
             this.label1.Size = new System.Drawing.Size(38, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sigla";
-            // 
-            // textBoxSigla
-            // 
-            this.textBoxSigla.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxSigla.Location = new System.Drawing.Point(39, 73);
-            this.textBoxSigla.MaxLength = 2;
-            this.textBoxSigla.Name = "textBoxSigla";
-            this.textBoxSigla.Size = new System.Drawing.Size(100, 22);
-            this.textBoxSigla.TabIndex = 1;
             // 
             // label2
             // 
@@ -92,16 +83,25 @@
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
+            // textBoxSigla
+            // 
+            this.textBoxSigla.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxSigla.Location = new System.Drawing.Point(39, 73);
+            this.textBoxSigla.MaxLength = 2;
+            this.textBoxSigla.Name = "textBoxSigla";
+            this.textBoxSigla.Size = new System.Drawing.Size(55, 22);
+            this.textBoxSigla.TabIndex = 8;
+            // 
             // FormEstadoNovo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 311);
+            this.Controls.Add(this.textBoxSigla);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxSigla);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormEstadoNovo";
@@ -115,10 +115,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxSigla;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonCancelar;
+        private System.Windows.Forms.TextBox textBoxSigla;
     }
 }

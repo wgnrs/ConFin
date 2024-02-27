@@ -43,3 +43,4 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.csproj.Co
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstado.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.FormPrincipal.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstadoNovo.resources
+C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormEstadoAltera.resources

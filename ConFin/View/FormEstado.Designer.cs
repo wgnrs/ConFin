@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEstado));
             this.dataGridViewMostra = new System.Windows.Forms.DataGridView();
+            this.estadosigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonNovo = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
-            this.estadosigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +51,22 @@
             this.dataGridViewMostra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMostra.Size = new System.Drawing.Size(364, 255);
             this.dataGridViewMostra.TabIndex = 0;
+            // 
+            // estadosigla
+            // 
+            this.estadosigla.DataPropertyName = "estadosigla";
+            this.estadosigla.HeaderText = "Sigla";
+            this.estadosigla.MinimumWidth = 6;
+            this.estadosigla.Name = "estadosigla";
+            this.estadosigla.Width = 60;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "Nome";
+            this.nome.MinimumWidth = 6;
+            this.nome.Name = "nome";
+            this.nome.Width = 200;
             // 
             // buttonNovo
             // 
@@ -70,6 +86,7 @@
             this.buttonAlterar.TabIndex = 2;
             this.buttonAlterar.Text = "Alterar estado";
             this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonExcluir
             // 
@@ -79,22 +96,6 @@
             this.buttonExcluir.TabIndex = 3;
             this.buttonExcluir.Text = "Excluir estado";
             this.buttonExcluir.UseVisualStyleBackColor = true;
-            // 
-            // estadosigla
-            // 
-            this.estadosigla.DataPropertyName = "estadosigla";
-            this.estadosigla.HeaderText = "Sigla";
-            this.estadosigla.MinimumWidth = 6;
-            this.estadosigla.Name = "estadosigla";
-            this.estadosigla.Width = 60;
-            // 
-            // nome
-            // 
-            this.nome.DataPropertyName = "nome";
-            this.nome.HeaderText = "Nome";
-            this.nome.MinimumWidth = 6;
-            this.nome.Name = "nome";
-            this.nome.Width = 200;
             // 
             // FormEstado
             // 

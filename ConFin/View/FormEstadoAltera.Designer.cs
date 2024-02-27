@@ -55,6 +55,7 @@
             this.buttonSalvar.TabIndex = 10;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // textBoxNome
             // 
@@ -78,7 +79,8 @@
             this.textBoxSigla.Location = new System.Drawing.Point(39, 75);
             this.textBoxSigla.MaxLength = 2;
             this.textBoxSigla.Name = "textBoxSigla";
-            this.textBoxSigla.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSigla.ReadOnly = true;
+            this.textBoxSigla.Size = new System.Drawing.Size(55, 22);
             this.textBoxSigla.TabIndex = 7;
             // 
             // label1

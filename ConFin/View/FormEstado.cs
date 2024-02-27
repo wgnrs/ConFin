@@ -40,5 +40,13 @@ namespace ConFin.View
             form.ShowDialog();
             AtualizaGrid();
         }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            Estado estado = (Estado) dataGridViewMostra.SelectedRows[0].DataBoundItem;
+            FormEstadoAltera form = new FormEstadoAltera(conexao, estado);
+            form.ShowDialog();
+            AtualizaGrid();
+        }
     }
 }
