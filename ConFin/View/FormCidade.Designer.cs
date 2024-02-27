@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCidade));
             this.dataGridViewMostra = new System.Windows.Forms.DataGridView();
-            this.buttonNova = new System.Windows.Forms.Button();
-            this.buttonAltera = new System.Windows.Forms.Button();
-            this.buttonExclui = new System.Windows.Forms.Button();
             this.cidadeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoSigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonNova = new System.Windows.Forms.Button();
+            this.buttonAltera = new System.Windows.Forms.Button();
+            this.buttonExclui = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,35 +50,8 @@
             this.dataGridViewMostra.Name = "dataGridViewMostra";
             this.dataGridViewMostra.RowHeadersWidth = 51;
             this.dataGridViewMostra.RowTemplate.Height = 24;
-            this.dataGridViewMostra.Size = new System.Drawing.Size(551, 300);
+            this.dataGridViewMostra.Size = new System.Drawing.Size(704, 300);
             this.dataGridViewMostra.TabIndex = 0;
-            // 
-            // buttonNova
-            // 
-            this.buttonNova.Location = new System.Drawing.Point(108, 382);
-            this.buttonNova.Name = "buttonNova";
-            this.buttonNova.Size = new System.Drawing.Size(105, 23);
-            this.buttonNova.TabIndex = 1;
-            this.buttonNova.Text = "Nova cidade";
-            this.buttonNova.UseVisualStyleBackColor = true;
-            // 
-            // buttonAltera
-            // 
-            this.buttonAltera.Location = new System.Drawing.Point(235, 382);
-            this.buttonAltera.Name = "buttonAltera";
-            this.buttonAltera.Size = new System.Drawing.Size(105, 23);
-            this.buttonAltera.TabIndex = 2;
-            this.buttonAltera.Text = "Alterar cidade";
-            this.buttonAltera.UseVisualStyleBackColor = true;
-            // 
-            // buttonExclui
-            // 
-            this.buttonExclui.Location = new System.Drawing.Point(365, 382);
-            this.buttonExclui.Name = "buttonExclui";
-            this.buttonExclui.Size = new System.Drawing.Size(105, 23);
-            this.buttonExclui.TabIndex = 3;
-            this.buttonExclui.Text = "Excluir cidade";
-            this.buttonExclui.UseVisualStyleBackColor = true;
             // 
             // cidadeId
             // 
@@ -104,11 +77,38 @@
             this.estadoSigla.Name = "estadoSigla";
             this.estadoSigla.Width = 80;
             // 
+            // buttonNova
+            // 
+            this.buttonNova.Location = new System.Drawing.Point(182, 387);
+            this.buttonNova.Name = "buttonNova";
+            this.buttonNova.Size = new System.Drawing.Size(105, 23);
+            this.buttonNova.TabIndex = 1;
+            this.buttonNova.Text = "Nova cidade";
+            this.buttonNova.UseVisualStyleBackColor = true;
+            // 
+            // buttonAltera
+            // 
+            this.buttonAltera.Location = new System.Drawing.Point(309, 387);
+            this.buttonAltera.Name = "buttonAltera";
+            this.buttonAltera.Size = new System.Drawing.Size(105, 23);
+            this.buttonAltera.TabIndex = 2;
+            this.buttonAltera.Text = "Alterar cidade";
+            this.buttonAltera.UseVisualStyleBackColor = true;
+            // 
+            // buttonExclui
+            // 
+            this.buttonExclui.Location = new System.Drawing.Point(439, 387);
+            this.buttonExclui.Name = "buttonExclui";
+            this.buttonExclui.Size = new System.Drawing.Size(105, 23);
+            this.buttonExclui.TabIndex = 3;
+            this.buttonExclui.Text = "Excluir cidade";
+            this.buttonExclui.UseVisualStyleBackColor = true;
+            // 
             // FormCidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 461);
+            this.ClientSize = new System.Drawing.Size(943, 461);
             this.Controls.Add(this.buttonExclui);
             this.Controls.Add(this.buttonAltera);
             this.Controls.Add(this.buttonNova);
