@@ -96,6 +96,7 @@
             this.buttonAltera.TabIndex = 2;
             this.buttonAltera.Text = "Alterar cidade";
             this.buttonAltera.UseVisualStyleBackColor = true;
+            this.buttonAltera.Click += new System.EventHandler(this.buttonAltera_Click);
             // 
             // buttonExclui
             // 

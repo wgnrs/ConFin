@@ -35,5 +35,13 @@ namespace ConFin.View
             form.ShowDialog();
             AtualizaGrid();
         }
+
+        private void buttonAltera_Click(object sender, EventArgs e)
+        {
+            Cidade cidade = (Cidade)dataGridViewMostra.SelectedRows[0].DataBoundItem;
+            FormCidadeAltera form = new FormCidadeAltera(conexao, cidade);
+            form.ShowDialog();
+            AtualizaGrid();
+        }
     }
 }

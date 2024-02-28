@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConFin.Modelo;
+using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +14,23 @@ namespace ConFin.View
 {
     public partial class FormCidadeAltera : Form
     {
-        public FormCidadeAltera()
+        NpgsqlConnection conexao = null;
+        Cidade cidade = null;
+        public FormCidadeAltera(NpgsqlConnection conexao, Cidade cidade)
         {
+            this.conexao = conexao;
+            this.cidade = cidade;
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
