@@ -106,6 +106,7 @@
             this.buttonExclui.TabIndex = 3;
             this.buttonExclui.Text = "Excluir cidade";
             this.buttonExclui.UseVisualStyleBackColor = true;
+            this.buttonExclui.Click += new System.EventHandler(this.buttonExclui_Click);
             // 
             // FormCidade
             // 

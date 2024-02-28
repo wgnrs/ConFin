@@ -43,5 +43,24 @@ namespace ConFin.View
             form.ShowDialog();
             AtualizaGrid();
         }
+
+        private void buttonExclui_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja excluir a cidade?", "Excluir cidade", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                Cidade cidade = (Cidade)dataGridViewMostra.SelectedRows[0].DataBoundItem;
+                bool realizou = CidadeDB.SetExcluiCidade(conexao, cidade.cidadeId);
+                if (realizou)
+                {
+                    MessageBox.Show("Cidade excluida com sucesso!");
+                    AtualizaGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao excluir cidade!");
+                }
+            }
+        }
     }
 }

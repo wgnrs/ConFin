@@ -54,5 +54,22 @@ namespace ConFin.View
         {
             Close();
         }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            cidade.nome = textBoxNome.Text;
+            Estado estado = (Estado) comboBoxEstado.SelectedItem;
+            cidade.estadoSigla = estado.estadoSigla;
+            bool realizou = CidadeDB.SetAlteraCidade(conexao, cidade);
+            if (realizou)
+            {
+                MessageBox.Show("Cidade alterada com sucesso");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao alterar cidade");
+            }
+        }
     }
 }
