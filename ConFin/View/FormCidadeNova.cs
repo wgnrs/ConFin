@@ -34,5 +34,22 @@ namespace ConFin.View
         {
             Close();
         }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            string nome = textBoxNome.Text;
+            Estado estado = (Estado) comboBoxEstado.SelectedItem;
+            Cidade cidade = new Cidade(nome, estado.estadoSigla);
+            bool realizou = CidadeDB.SetIncluiCidade(conexao, cidade);
+            if (realizou)
+            {
+                MessageBox.Show("Cidade cadastrada com sucesso!");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao cadastrar cidade!");
+            }
+        }
     }
 }
