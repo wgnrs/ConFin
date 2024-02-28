@@ -67,7 +67,7 @@
             this.comboBoxEstado.FormattingEnabled = true;
             this.comboBoxEstado.Location = new System.Drawing.Point(79, 173);
             this.comboBoxEstado.Name = "comboBoxEstado";
-            this.comboBoxEstado.Size = new System.Drawing.Size(106, 24);
+            this.comboBoxEstado.Size = new System.Drawing.Size(246, 24);
             this.comboBoxEstado.TabIndex = 3;
             // 
             // buttonSalvar

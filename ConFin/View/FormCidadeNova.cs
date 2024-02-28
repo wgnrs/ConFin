@@ -1,4 +1,6 @@
-﻿using Npgsql;
+﻿using ConFin.Controle;
+using ConFin.Modelo;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +20,14 @@ namespace ConFin.View
         {
             this.conexao = conexao;
             InitializeComponent();
+            PopulaComboEstado();
+        }
+
+        private void PopulaComboEstado()
+        {
+            List<Estado> lista = EstadoDB.GetEstados(conexao);
+            comboBoxEstado.Items.Clear();
+            comboBoxEstado.DataSource = lista;
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

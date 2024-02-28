@@ -17,5 +17,11 @@ namespace ConFin.Modelo
             this.estadoSigla = estadoSigla;
             this.nome = nome;
         }
+
+        override
+        public string ToString()
+        {
+            return this.estadoSigla + " - " + this.nome;
+        }
     }
 }
