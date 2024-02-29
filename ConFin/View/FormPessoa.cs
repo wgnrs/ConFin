@@ -36,5 +36,13 @@ namespace ConFin.View
             form.ShowDialog();
             AtualizaGrid();
         }
+
+        private void buttonAltera_Click(object sender, EventArgs e)
+        {
+            Pessoa pessoa = (Pessoa)dataGridViewMostra.SelectedRows[0].DataBoundItem;
+            FormPessoaAltera form = new FormPessoaAltera(conexao, pessoa);
+            form.ShowDialog();
+            AtualizaGrid();
+        }
     }
 }

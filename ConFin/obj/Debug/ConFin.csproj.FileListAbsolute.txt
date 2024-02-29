@@ -49,3 +49,4 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.Form
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormCidadeAltera.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormPessoa.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormPessoaNovo.resources
+C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormPessoaAltera.resources
