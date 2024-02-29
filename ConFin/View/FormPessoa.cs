@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ConFin.Controle;
+using ConFin.Modelo;
+using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,18 @@ namespace ConFin.View
 {
     public partial class FormPessoa : Form
     {
-        public FormPessoa()
+        NpgsqlConnection conexao = null;
+        public FormPessoa(NpgsqlConnection conexao)
         {
+            this.conexao = conexao;
             InitializeComponent();
+            AtualizaGrid();
+        }
+
+        private void AtualizaGrid()
+        {
+            List<Pessoa> lista = PessoaDB.GetPessoas(conexao);
+            dataGridViewMostra.DataSource = lista;
         }
     }
 }

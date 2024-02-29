@@ -105,7 +105,7 @@ namespace ConFin
 
         private void pessoaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormPessoa form = new FormPessoa();
+            FormPessoa form = new FormPessoa(conexao);
             form.ShowDialog();
         }
     }
