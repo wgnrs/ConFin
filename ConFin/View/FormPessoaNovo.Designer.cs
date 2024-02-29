@@ -190,6 +190,7 @@
             this.buttonSalvar.TabIndex = 17;
             this.buttonSalvar.Text = "Salvar Pessoa";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonCancelar
             // 

@@ -39,5 +39,27 @@ namespace ConFin.View
         {
             Close();
         }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            Pessoa pessoa = new Pessoa(textBoxNome.Text,
+                            textBoxCPFCNPJ.Text,
+                            textBoxEndereco.Text,
+                            textBoxBairro.Text,
+                            textBoxTelefone.Text,
+                            textBoxEmail.Text,
+                            comboBoxTipo.SelectedIndex,
+                            ((Cidade)comboBoxCidade.SelectedItem).cidadeId);
+            bool realizou = PessoaDB.SetIncluiPessoa(conexao, pessoa);
+            if(realizou)
+            {
+                MessageBox.Show("Pessoa cadastrada com sucesso!");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao cadastrar a pessoa!");
+            }
+        }
     }
 }
