@@ -134,7 +134,6 @@
             this.telefone.HeaderText = "Telefone";
             this.telefone.MinimumWidth = 6;
             this.telefone.Name = "telefone";
-            this.telefone.Width = 125;
             // 
             // email
             // 

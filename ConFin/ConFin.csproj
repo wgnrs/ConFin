@@ -157,6 +157,12 @@
     <Compile Include="View\FormPessoa.Designer.cs">
       <DependentUpon>FormPessoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormPessoaNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPessoaNovo.Designer.cs">
+      <DependentUpon>FormPessoaNovo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormPessoa.resx">
       <DependentUpon>FormPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPessoaNovo.resx">
+      <DependentUpon>FormPessoaNovo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
