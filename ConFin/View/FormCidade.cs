@@ -49,7 +49,7 @@ namespace ConFin.View
             DialogResult result = MessageBox.Show("Deseja excluir a cidade?", "Excluir cidade", MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                Cidade cidade = (Cidade)dataGridViewMostra.SelectedRows[0].DataBoundItem;
+                Cidade cidade = (Cidade) dataGridViewMostra.SelectedRows[0].DataBoundItem;
                 bool realizou = CidadeDB.SetExcluiCidade(conexao, cidade.cidadeId);
                 if (realizou)
                 {
