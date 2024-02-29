@@ -23,5 +23,11 @@ namespace ConFin.Modelo
             this.nome = nome;
             this.estadoSigla = estadoSigla;
         }
+
+        override
+        public string ToString()
+        {
+            return this.cidadeId + " - " + this.nome + "/" + this.estadoSigla;
+        }
     }
 }

@@ -70,6 +70,7 @@
             this.buttonNova.TabIndex = 1;
             this.buttonNova.Text = "Nova Pessoa";
             this.buttonNova.UseVisualStyleBackColor = true;
+            this.buttonNova.Click += new System.EventHandler(this.buttonNova_Click);
             // 
             // buttonAltera
             // 

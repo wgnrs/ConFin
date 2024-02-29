@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ConFin.Controle;
+using ConFin.Modelo;
+using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,29 @@ namespace ConFin.View
 {
     public partial class FormPessoaNovo : Form
     {
-        public FormPessoaNovo()
+        NpgsqlConnection conexao = null;
+        public FormPessoaNovo(NpgsqlConnection conexao)
         {
+            this.conexao = conexao;
             InitializeComponent();
+            PopulaComboCidade();
+            comboBoxTipo.SelectedIndex = 0;
+        }
+
+        private void PopulaComboCidade()
+        {
+            List<Cidade> lista = CidadeDB.GetCidades(conexao);
+            comboBoxCidade.Items.Clear();
+            comboBoxCidade.DataSource = lista;
+            if(comboBoxCidade.Items.Count > 0 )
+            {
+                comboBoxCidade.SelectedIndex = 0;
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -29,5 +29,12 @@ namespace ConFin.View
             List<Pessoa> lista = PessoaDB.GetPessoas(conexao);
             dataGridViewMostra.DataSource = lista;
         }
+
+        private void buttonNova_Click(object sender, EventArgs e)
+        {
+            FormPessoaNovo form = new FormPessoaNovo(conexao);
+            form.ShowDialog();
+            AtualizaGrid();
+        }
     }
 }
