@@ -47,3 +47,4 @@ C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.Form
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormCidade.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormCidadeNova.resources
 C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormCidadeAltera.resources
+C:\Users\wagne\Projetos C#\Curso\ConFin\ConFin\ConFin\obj\Debug\ConFin.View.FormPessoa.resources

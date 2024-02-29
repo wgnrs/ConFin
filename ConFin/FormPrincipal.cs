@@ -102,5 +102,11 @@ namespace ConFin
             FormCidade form = new FormCidade(conexao);
             form.ShowDialog();
         }
+
+        private void pessoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPessoa form = new FormPessoa();
+            form.ShowDialog();
+        }
     }
 }

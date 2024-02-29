@@ -162,6 +162,7 @@
             this.pessoaToolStripMenuItem.Name = "pessoaToolStripMenuItem";
             this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.pessoaToolStripMenuItem.Text = "Pessoa";
+            this.pessoaToolStripMenuItem.Click += new System.EventHandler(this.pessoaToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
