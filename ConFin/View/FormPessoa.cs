@@ -44,5 +44,28 @@ namespace ConFin.View
             form.ShowDialog();
             AtualizaGrid();
         }
+
+        private void buttonExclui_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja excluir esta pessoa?", "Excluir pessoa", MessageBoxButtons.OKCancel);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                Pessoa pessoa = (Pessoa)dataGridViewMostra.SelectedRows[0].DataBoundItem;
+                bool realizou = PessoaDB.SetExcluiPessoa(conexao, pessoa.pessoaId);
+                if (realizou)
+                {
+                    MessageBox.Show("Pessoa excluida com sucesso!");
+                    AtualizaGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao excluir a pessoa!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Operação cancelada!");
+            }
+        }
     }
 }

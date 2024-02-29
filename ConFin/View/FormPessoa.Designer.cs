@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPessoa));
             this.dataGridViewMostra = new System.Windows.Forms.DataGridView();
-            this.buttonNova = new System.Windows.Forms.Button();
-            this.buttonAltera = new System.Windows.Forms.Button();
-            this.buttonExclui = new System.Windows.Forms.Button();
             this.pessoaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cpfcnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +37,9 @@
             this.bairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonNova = new System.Windows.Forms.Button();
+            this.buttonAltera = new System.Windows.Forms.Button();
+            this.buttonExclui = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,62 @@
             this.dataGridViewMostra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMostra.Size = new System.Drawing.Size(772, 293);
             this.dataGridViewMostra.TabIndex = 0;
+            // 
+            // pessoaId
+            // 
+            this.pessoaId.DataPropertyName = "pessoaId";
+            this.pessoaId.HeaderText = "Id";
+            this.pessoaId.MinimumWidth = 6;
+            this.pessoaId.Name = "pessoaId";
+            this.pessoaId.Width = 60;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "Nome";
+            this.nome.MinimumWidth = 6;
+            this.nome.Name = "nome";
+            this.nome.Width = 200;
+            // 
+            // cpfcnpj
+            // 
+            this.cpfcnpj.DataPropertyName = "cpfcnpj";
+            this.cpfcnpj.HeaderText = "CPF/CNPJ";
+            this.cpfcnpj.MinimumWidth = 6;
+            this.cpfcnpj.Name = "cpfcnpj";
+            this.cpfcnpj.Width = 125;
+            // 
+            // endereco
+            // 
+            this.endereco.DataPropertyName = "endereco";
+            this.endereco.HeaderText = "Endereço";
+            this.endereco.MinimumWidth = 6;
+            this.endereco.Name = "endereco";
+            this.endereco.Width = 200;
+            // 
+            // bairro
+            // 
+            this.bairro.DataPropertyName = "bairro";
+            this.bairro.HeaderText = "Bairro";
+            this.bairro.MinimumWidth = 6;
+            this.bairro.Name = "bairro";
+            this.bairro.Width = 200;
+            // 
+            // telefone
+            // 
+            this.telefone.DataPropertyName = "telefone";
+            this.telefone.HeaderText = "Telefone";
+            this.telefone.MinimumWidth = 6;
+            this.telefone.Name = "telefone";
+            this.telefone.Width = 125;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "E-mail";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            this.email.Width = 125;
             // 
             // buttonNova
             // 
@@ -90,60 +146,7 @@
             this.buttonExclui.TabIndex = 3;
             this.buttonExclui.Text = "Excluir Pessoa";
             this.buttonExclui.UseVisualStyleBackColor = true;
-            // 
-            // pessoaId
-            // 
-            this.pessoaId.DataPropertyName = "pessoaId";
-            this.pessoaId.HeaderText = "Id";
-            this.pessoaId.MinimumWidth = 6;
-            this.pessoaId.Name = "pessoaId";
-            this.pessoaId.Width = 60;
-            // 
-            // nome
-            // 
-            this.nome.DataPropertyName = "nome";
-            this.nome.HeaderText = "Nome";
-            this.nome.MinimumWidth = 6;
-            this.nome.Name = "nome";
-            this.nome.Width = 200;
-            // 
-            // cpfcnpj
-            // 
-            this.cpfcnpj.DataPropertyName = "cpfcnpj";
-            this.cpfcnpj.HeaderText = "CPF/CNPJ";
-            this.cpfcnpj.MinimumWidth = 6;
-            this.cpfcnpj.Name = "cpfcnpj";
-            // 
-            // endereco
-            // 
-            this.endereco.DataPropertyName = "endereco";
-            this.endereco.HeaderText = "Endereço";
-            this.endereco.MinimumWidth = 6;
-            this.endereco.Name = "endereco";
-            this.endereco.Width = 200;
-            // 
-            // bairro
-            // 
-            this.bairro.DataPropertyName = "bairro";
-            this.bairro.HeaderText = "Bairro";
-            this.bairro.MinimumWidth = 6;
-            this.bairro.Name = "bairro";
-            this.bairro.Width = 200;
-            // 
-            // telefone
-            // 
-            this.telefone.DataPropertyName = "telefone";
-            this.telefone.HeaderText = "Telefone";
-            this.telefone.MinimumWidth = 6;
-            this.telefone.Name = "telefone";
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "E-mail";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.Width = 125;
+            this.buttonExclui.Click += new System.EventHandler(this.buttonExclui_Click);
             // 
             // FormPessoa
             // 

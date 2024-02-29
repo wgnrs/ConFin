@@ -69,6 +69,7 @@
             this.buttonSalvar.TabIndex = 35;
             this.buttonSalvar.Text = "Salvar Pessoa";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // textBoxEmail
             // 

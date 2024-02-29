@@ -64,5 +64,27 @@ namespace ConFin.View
         {
             Close();
         }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            pessoa.nome = textBoxNome.Text;
+            pessoa.endereco = textBoxEndereco.Text;
+            pessoa.cpfcnpj = textBoxCPFCNPJ.Text;
+            pessoa.bairro = textBoxBairro.Text;
+            pessoa.telefone = textBoxTelefone.Text;
+            pessoa.email = textBoxEmail.Text;
+            pessoa.cidadeId = ((Cidade) comboBoxCidade.SelectedItem).cidadeId;
+            pessoa.tipo = comboBoxTipo.SelectedIndex;
+            bool realizou = PessoaDB.SetAlteraPessoa(conexao, pessoa);
+            if (realizou)
+            {
+                MessageBox.Show("Pessoa alterada com sucesso!");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao alterar pessoa!");
+            }
+        }
     }
 }
