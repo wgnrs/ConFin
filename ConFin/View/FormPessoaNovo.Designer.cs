@@ -127,7 +127,7 @@
             this.textBoxTelefone.Location = new System.Drawing.Point(37, 333);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(337, 22);
-            this.textBoxTelefone.TabIndex = 11;
+            this.textBoxTelefone.TabIndex = 13;
             // 
             // label6
             // 
@@ -144,7 +144,7 @@
             this.comboBoxCidade.Location = new System.Drawing.Point(37, 255);
             this.comboBoxCidade.Name = "comboBoxCidade";
             this.comboBoxCidade.Size = new System.Drawing.Size(337, 24);
-            this.comboBoxCidade.TabIndex = 12;
+            this.comboBoxCidade.TabIndex = 11;
             // 
             // comboBoxTipo
             // 
@@ -155,7 +155,7 @@
             this.comboBoxTipo.Location = new System.Drawing.Point(419, 255);
             this.comboBoxTipo.Name = "comboBoxTipo";
             this.comboBoxTipo.Size = new System.Drawing.Size(148, 24);
-            this.comboBoxTipo.TabIndex = 14;
+            this.comboBoxTipo.TabIndex = 12;
             // 
             // label7
             // 

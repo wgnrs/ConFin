@@ -133,6 +133,12 @@
     <Compile Include="View\FormCidadeNova.Designer.cs">
       <DependentUpon>FormCidadeNova.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormConta.Designer.cs">
+      <DependentUpon>FormConta.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormEstado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormCidadeNova.resx">
       <DependentUpon>FormCidadeNova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormConta.resx">
+      <DependentUpon>FormConta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormEstado.resx">
       <DependentUpon>FormEstado.cs</DependentUpon>
