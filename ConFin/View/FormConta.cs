@@ -26,6 +26,7 @@ namespace ConFin.View
         private void AtualizaGrid()
         {
             List<Conta> lista = ContaDB.GetContas(conexao);
+            dataGridViewMostra.DataSource = lista;
         }
 
         private void buttonNovo_Click(object sender, EventArgs e)
