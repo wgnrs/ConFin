@@ -33,12 +33,29 @@
             this.buttonNovo = new System.Windows.Forms.Button();
             this.buttonAltera = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
+            this.contaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datavencimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datapagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pessoaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMostra)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewMostra
             // 
             this.dataGridViewMostra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMostra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.contaId,
+            this.descricao,
+            this.valor,
+            this.tipo,
+            this.situacao,
+            this.datavencimento,
+            this.datapagamento,
+            this.pessoaId});
             this.dataGridViewMostra.Location = new System.Drawing.Point(28, 45);
             this.dataGridViewMostra.Name = "dataGridViewMostra";
             this.dataGridViewMostra.RowHeadersWidth = 51;
@@ -75,6 +92,68 @@
             this.buttonExcluir.Text = "Excluir Conta";
             this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
+            // contaId
+            // 
+            this.contaId.DataPropertyName = "contaId";
+            this.contaId.HeaderText = "Id";
+            this.contaId.MinimumWidth = 6;
+            this.contaId.Name = "contaId";
+            this.contaId.Width = 40;
+            // 
+            // descricao
+            // 
+            this.descricao.DataPropertyName = "descricao";
+            this.descricao.HeaderText = "Descrição";
+            this.descricao.MinimumWidth = 6;
+            this.descricao.Name = "descricao";
+            // 
+            // valor
+            // 
+            this.valor.DataPropertyName = "valor";
+            this.valor.HeaderText = "Valor";
+            this.valor.MinimumWidth = 6;
+            this.valor.Name = "valor";
+            // 
+            // tipo
+            // 
+            this.tipo.DataPropertyName = "tipo";
+            this.tipo.HeaderText = "Tipo";
+            this.tipo.MinimumWidth = 6;
+            this.tipo.Name = "tipo";
+            this.tipo.Width = 60;
+            // 
+            // situacao
+            // 
+            this.situacao.DataPropertyName = "situacao";
+            this.situacao.HeaderText = "Situação";
+            this.situacao.MinimumWidth = 6;
+            this.situacao.Name = "situacao";
+            this.situacao.Width = 60;
+            // 
+            // datavencimento
+            // 
+            this.datavencimento.DataPropertyName = "datavencimento";
+            this.datavencimento.HeaderText = "Data de Vencimento";
+            this.datavencimento.MinimumWidth = 6;
+            this.datavencimento.Name = "datavencimento";
+            this.datavencimento.Width = 125;
+            // 
+            // datapagamento
+            // 
+            this.datapagamento.DataPropertyName = "datapagamento";
+            this.datapagamento.HeaderText = "Data de Pagamento";
+            this.datapagamento.MinimumWidth = 6;
+            this.datapagamento.Name = "datapagamento";
+            this.datapagamento.Width = 125;
+            // 
+            // pessoaId
+            // 
+            this.pessoaId.DataPropertyName = "pessoaId";
+            this.pessoaId.HeaderText = "Id Pessoa";
+            this.pessoaId.MinimumWidth = 6;
+            this.pessoaId.Name = "pessoaId";
+            this.pessoaId.Width = 30;
+            // 
             // FormConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -99,5 +178,13 @@
         private System.Windows.Forms.Button buttonNovo;
         private System.Windows.Forms.Button buttonAltera;
         private System.Windows.Forms.Button buttonExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contaId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn situacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datavencimento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datapagamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pessoaId;
     }
 }
