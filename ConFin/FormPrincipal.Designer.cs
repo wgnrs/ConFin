@@ -149,6 +149,7 @@
             this.contaToolStripMenuItem.Name = "contaToolStripMenuItem";
             this.contaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.contaToolStripMenuItem.Text = "Conta";
+            this.contaToolStripMenuItem.Click += new System.EventHandler(this.contaToolStripMenuItem_Click);
             // 
             // estadoToolStripMenuItem
             // 

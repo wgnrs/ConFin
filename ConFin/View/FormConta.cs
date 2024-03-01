@@ -1,4 +1,6 @@
-﻿using Npgsql;
+﻿using ConFin.Controle;
+using ConFin.Modelo;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +20,12 @@ namespace ConFin.View
         {
             this.conexao = conexao;
             InitializeComponent();
+            AtualizaGrid();
+        }
+
+        private void AtualizaGrid()
+        {
+            List<Conta> lista = ContaDB.GetContas(conexao);
         }
 
         private void buttonNovo_Click(object sender, EventArgs e)

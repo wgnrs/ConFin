@@ -108,5 +108,11 @@ namespace ConFin
             FormPessoa form = new FormPessoa(conexao);
             form.ShowDialog();
         }
+
+        private void contaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormConta form = new FormConta(conexao);
+            form.ShowDialog();
+        }
     }
 }
