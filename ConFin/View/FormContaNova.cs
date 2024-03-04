@@ -36,5 +36,28 @@ namespace ConFin.View
         {
             Close();
         }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            string descricao = textBoxDescricao.Text;
+            double valor = double.Parse(textBoxValor.Text);
+            DateTime dataVencimento = DateTime.Parse(maskedTextBoxDataVencimento.Text);
+            DateTime dataPagamento = DateTime.Parse(maskedTextBoxDataPagamento.Text);
+            int tipo = comboBoxTipo.SelectedIndex;
+            int situacao = comboBoxSituacao.SelectedIndex;
+            int pessoaId = ((Pessoa)comboBoxPessoa.SelectedItem).pessoaId;
+            Conta conta = new Conta(descricao,valor,dataVencimento,dataPagamento,situacao,tipo,pessoaId);
+            bool realizou = ContaDB.SetIncluiConta(conexao, conta);
+            if (realizou)
+            {
+                MessageBox.Show("Conta cadastrada com sucesso!");
+                Close();            
+            }
+            else
+            {
+                MessageBox.Show("Erro ao cadastrar conta!");
+            }
+
+        }
     }
 }

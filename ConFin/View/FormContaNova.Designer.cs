@@ -180,6 +180,7 @@
             this.buttonSalvar.TabIndex = 14;
             this.buttonSalvar.Text = "Salvar Conta";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonCancelar
             // 
