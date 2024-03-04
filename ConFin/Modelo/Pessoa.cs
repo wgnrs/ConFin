@@ -44,5 +44,11 @@ namespace ConFin.Modelo
             this.tipo = tipo;
             this.cidadeId = cidadeId;
         }
+
+        override
+        public string ToString()
+        {
+            return this.pessoaId + " - " + this.nome;
+        }
     }
 }
