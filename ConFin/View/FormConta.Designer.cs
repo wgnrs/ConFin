@@ -71,7 +71,7 @@
             this.buttonNovo.Name = "buttonNovo";
             this.buttonNovo.Size = new System.Drawing.Size(101, 23);
             this.buttonNovo.TabIndex = 1;
-            this.buttonNovo.Text = "Salvar Conta";
+            this.buttonNovo.Text = "Nova Conta";
             this.buttonNovo.UseVisualStyleBackColor = true;
             this.buttonNovo.Click += new System.EventHandler(this.buttonNovo_Click);
             // 
