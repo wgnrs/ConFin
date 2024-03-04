@@ -32,7 +32,9 @@ namespace ConFin.View
 
         private void buttonNovo_Click(object sender, EventArgs e)
         {
-
+            FormContaNova form = new FormContaNova(conexao);
+            form.ShowDialog();
+            AtualizaGrid();
         }
     }
 }
