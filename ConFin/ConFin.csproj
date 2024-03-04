@@ -139,6 +139,12 @@
     <Compile Include="View\FormConta.Designer.cs">
       <DependentUpon>FormConta.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormContaNova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormContaNova.Designer.cs">
+      <DependentUpon>FormContaNova.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormEstado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormConta.resx">
       <DependentUpon>FormConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormContaNova.resx">
+      <DependentUpon>FormContaNova.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormEstado.resx">
       <DependentUpon>FormEstado.cs</DependentUpon>

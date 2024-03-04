@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConta));
             this.dataGridViewMostra = new System.Windows.Forms.DataGridView();
             this.buttonNovo = new System.Windows.Forms.Button();
@@ -111,6 +112,9 @@
             // valor
             // 
             this.valor.DataPropertyName = "valor";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.valor.DefaultCellStyle = dataGridViewCellStyle1;
             this.valor.HeaderText = "Valor";
             this.valor.MinimumWidth = 6;
             this.valor.Name = "valor";
