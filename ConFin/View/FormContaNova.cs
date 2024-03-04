@@ -42,7 +42,16 @@ namespace ConFin.View
             string descricao = textBoxDescricao.Text;
             double valor = double.Parse(textBoxValor.Text);
             DateTime dataVencimento = DateTime.Parse(maskedTextBoxDataVencimento.Text);
-            DateTime dataPagamento = DateTime.Parse(maskedTextBoxDataPagamento.Text);
+            DateTime ? valorPadrao = null;
+            DateTime dataPagamento = valorPadrao.GetValueOrDefault();
+            try
+            {
+                dataPagamento = DateTime.Parse(maskedTextBoxDataPagamento.Text);
+            }
+            catch (Exception erro)
+            {
+                Console.WriteLine("Erro de conversão de data: " +  erro.Message);                
+            }            
             int tipo = comboBoxTipo.SelectedIndex;
             int situacao = comboBoxSituacao.SelectedIndex;
             int pessoaId = ((Pessoa)comboBoxPessoa.SelectedItem).pessoaId;
