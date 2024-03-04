@@ -57,6 +57,7 @@
             this.buttonCancelar.TabIndex = 31;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonSalvar
             // 
@@ -66,6 +67,7 @@
             this.buttonSalvar.TabIndex = 30;
             this.buttonSalvar.Text = "Salvar Conta";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // label7
             // 

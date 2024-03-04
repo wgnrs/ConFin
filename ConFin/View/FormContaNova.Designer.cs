@@ -55,6 +55,7 @@
             this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Descrição";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxDescricao
             // 
@@ -62,6 +63,7 @@
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(334, 22);
             this.textBoxDescricao.TabIndex = 1;
+            this.textBoxDescricao.TextChanged += new System.EventHandler(this.textBoxDescricao_TextChanged);
             // 
             // textBoxValor
             // 
@@ -69,6 +71,7 @@
             this.textBoxValor.Name = "textBoxValor";
             this.textBoxValor.Size = new System.Drawing.Size(118, 22);
             this.textBoxValor.TabIndex = 3;
+            this.textBoxValor.TextChanged += new System.EventHandler(this.textBoxValor_TextChanged);
             // 
             // label2
             // 
@@ -78,6 +81,7 @@
             this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Valor";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -87,6 +91,7 @@
             this.label3.Size = new System.Drawing.Size(129, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Data de Vencimento";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // maskedTextBoxDataVencimento
             // 
@@ -96,6 +101,7 @@
             this.maskedTextBoxDataVencimento.Size = new System.Drawing.Size(182, 22);
             this.maskedTextBoxDataVencimento.TabIndex = 5;
             this.maskedTextBoxDataVencimento.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBoxDataVencimento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBoxDataVencimento_MaskInputRejected);
             // 
             // maskedTextBoxDataPagamento
             // 
@@ -105,6 +111,7 @@
             this.maskedTextBoxDataPagamento.Size = new System.Drawing.Size(182, 22);
             this.maskedTextBoxDataPagamento.TabIndex = 7;
             this.maskedTextBoxDataPagamento.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBoxDataPagamento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBoxDataPagamento_MaskInputRejected);
             // 
             // label4
             // 
@@ -114,6 +121,7 @@
             this.label4.Size = new System.Drawing.Size(128, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Data de Pagamento";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // comboBoxTipo
             // 
@@ -125,6 +133,7 @@
             this.comboBoxTipo.Name = "comboBoxTipo";
             this.comboBoxTipo.Size = new System.Drawing.Size(121, 24);
             this.comboBoxTipo.TabIndex = 8;
+            this.comboBoxTipo.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipo_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -134,6 +143,7 @@
             this.label5.Size = new System.Drawing.Size(35, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Tipo";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -143,6 +153,7 @@
             this.label6.Size = new System.Drawing.Size(60, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "Situacao";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // comboBoxSituacao
             // 
@@ -154,6 +165,7 @@
             this.comboBoxSituacao.Name = "comboBoxSituacao";
             this.comboBoxSituacao.Size = new System.Drawing.Size(121, 24);
             this.comboBoxSituacao.TabIndex = 10;
+            this.comboBoxSituacao.SelectedIndexChanged += new System.EventHandler(this.comboBoxSituacao_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -163,6 +175,7 @@
             this.label7.Size = new System.Drawing.Size(54, 16);
             this.label7.TabIndex = 13;
             this.label7.Text = "Pessoa";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // comboBoxPessoa
             // 
@@ -171,6 +184,7 @@
             this.comboBoxPessoa.Name = "comboBoxPessoa";
             this.comboBoxPessoa.Size = new System.Drawing.Size(529, 24);
             this.comboBoxPessoa.TabIndex = 12;
+            this.comboBoxPessoa.SelectedIndexChanged += new System.EventHandler(this.comboBoxPessoa_SelectedIndexChanged);
             // 
             // buttonSalvar
             // 

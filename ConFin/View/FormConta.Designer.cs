@@ -83,6 +83,7 @@
             this.buttonAltera.TabIndex = 2;
             this.buttonAltera.Text = "Alterar Conta";
             this.buttonAltera.UseVisualStyleBackColor = true;
+            this.buttonAltera.Click += new System.EventHandler(this.buttonAltera_Click);
             // 
             // buttonExcluir
             // 
@@ -92,6 +93,7 @@
             this.buttonExcluir.TabIndex = 3;
             this.buttonExcluir.Text = "Excluir Conta";
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // contaId
             // 
