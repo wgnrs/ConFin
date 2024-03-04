@@ -20,6 +20,7 @@ namespace ConFin.View
         {
             this.conexao = conexao;
             InitializeComponent();
+            dataGridViewMostra.AutoGenerateColumns = false;
             AtualizaGrid();
         }
 

@@ -106,6 +106,7 @@
             this.descricao.HeaderText = "Descrição";
             this.descricao.MinimumWidth = 6;
             this.descricao.Name = "descricao";
+            this.descricao.Width = 125;
             // 
             // valor
             // 
@@ -113,6 +114,7 @@
             this.valor.HeaderText = "Valor";
             this.valor.MinimumWidth = 6;
             this.valor.Name = "valor";
+            this.valor.Width = 125;
             // 
             // tipo
             // 
@@ -152,7 +154,7 @@
             this.pessoaId.HeaderText = "Id Pessoa";
             this.pessoaId.MinimumWidth = 6;
             this.pessoaId.Name = "pessoaId";
-            this.pessoaId.Width = 30;
+            this.pessoaId.Width = 75;
             // 
             // FormConta
             // 
